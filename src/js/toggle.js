@@ -5,7 +5,7 @@ const Theme = {
   DARK: 'dark-theme',
 };
 
-const oncheckboxClick = function (evt) {
+const onCheckboxClick = function (evt) {
   document.body.classList.toggle(Theme.LIGHT);
   document.body.classList.toggle(Theme.DARK);
   localStorage.setItem('theme', document.body.classList.value);
@@ -22,4 +22,4 @@ const favoriteTheme = function (evt) {
   }
 };
 
-export { Theme, oncheckboxClick, favoriteTheme };
+export { Theme, onCheckboxClick, favoriteTheme };
